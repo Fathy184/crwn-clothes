@@ -1,14 +1,15 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import "./App.scss";
 import HomePage from "./pages/homepage/homepage.component";
-import { Routes, Route } from "react-router-dom";
+import Shop from "./pages/shop/shop.component";
 
 function App() {
   return (
-    <div>
-      <h1>Hello From App.js Again</h1>
+    <div className="App">
       <Routes>
         <Route exact path="/" element={<HomePage />} />
+        <Route path="/shop" element={<Shop />} />
       </Routes>
     </div>
   );
